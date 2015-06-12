@@ -1,0 +1,14 @@
+.panel-favorites {
+    spacing: 6px;
+}
+
+.panel-launcher-label {
+    border-radius: 7px;
+    padding: 4px 12px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    font-size: 9pt;
+    font-weight: bold;
+    -y-offset: 6px;
+}

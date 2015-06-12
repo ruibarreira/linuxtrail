@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Icon[en_US]=other-driver
+Name[en_US]=Installer
+Comment[en_US]=Installer
+Exec=sudo /usr/lib/live-installer/main.py
+Name=Installer
+Comment=Installer
+Icon=other-driver

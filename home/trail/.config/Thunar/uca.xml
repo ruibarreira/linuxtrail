@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actions [
+  <!ELEMENT actions (action)+>
+
+  <!ELEMENT action (icon|patterns|name|command|description|directories|audio-files|image-files|other-files|text-files|video-files)*>
+
+  <!ELEMENT icon (#PCDATA)>
+  <!ELEMENT command (#PCDATA)>
+  <!ELEMENT patterns (#PCDATA)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT description (#PCDATA)>
+  <!ATTLIST description xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT directories EMPTY>
+  <!ELEMENT audio-files EMPTY>
+  <!ELEMENT image-files EMPTY>
+  <!ELEMENT other-files EMPTY>
+  <!ELEMENT text-files EMPTY>
+  <!ELEMENT video-files EMPTY>
+]>
+<actions>
+  <action>
+    <icon>utilities-terminal</icon>
+    <patterns>*</patterns>
+    <name>Open Terminal Here</name>
+    <name xml:lang="ar">إفتح هنا الشاشة الطرفية</name>
+    <name xml:lang="be">Адкрыць тут тэрмінал</name>
+    <name xml:lang="ca">Obre aquí un Terminal</name>
+    <name xml:lang="cs">Otevřít terminál zde</name>
+    <name xml:lang="de">Terminal hier öffnen</name>
+    <name xml:lang="dz">ནཱ་ལུ་ཊལ་མི་ནལ་ཁ་ཕྱེ།</name>
+    <name xml:lang="el">Άνοιγμα τερματικού εδώ</name>
+    <name xml:lang="en_GB">Open Terminal Here</name>
+    <name xml:lang="eo">Malfermu terminalon ĉi tie</name>
+    <name xml:lang="es">Abrir Terminal Aquí</name>
+    <name xml:lang="et">Ava siin terminal</name>
+    <name xml:lang="eu">Ireki Terminala Hemen</name>
+    <name xml:lang="fi">Avaa pääte tässä hakemistossa</name>
+    <name xml:lang="fr">Ouvrir un terminal ici</name>
+    <name xml:lang="gl">Abrir terminal aquí</name>
+    <name xml:lang="he">פתח טרמינל כאן</name>
+    <name xml:lang="hu">Terminál megnyitása itt</name>
+    <name xml:lang="it">Apri un terminale qui</name>
+    <name xml:lang="ja">ここで Terminal を開く</name>
+    <name xml:lang="ko">이 위치에서 터미널 열기</name>
+    <name xml:lang="lv">Atvērt Šeit Termināli</name>
+    <name xml:lang="mk">Отворете терминал тука</name>
+    <name xml:lang="nb_NO">Åpne terminalvindu her</name>
+    <name xml:lang="nl">Open hier een terminal</name>
+    <name xml:lang="pa">ਇੱਥੇ ਟਰਮੀਨਲ ਖੋਲ੍ਹੋ</name>
+    <name xml:lang="pl">Otwórz terminal tutaj</name>
+    <name xml:lang="pt_BR">Abrir Terminal Aqui</name>
+    <name xml:lang="pt_PT">Abrir Terminal Aqui</name>
+    <name xml:lang="ro">Deschide aici un terminal</name>
+    <name xml:lang="ru">Открыть терминал</name>
+    <name xml:lang="sk">Otvoriť v termináli</name>
+    <name xml:lang="sq">Hap Terminalin Këtu</name>
+    <name xml:lang="sv">Öppna terminal här</name>
+    <name xml:lang="tr">Terminali Buraya Aç</name>
+    <name xml:lang="uk">Відкрити термінал тут</name>
+    <name xml:lang="ur">ٹرمنل یہیں کھولیں</name>
+    <name xml:lang="zh_CN">在此打开终端</name>
+    <name xml:lang="zh_TW">在此開啟終端機</name>
+    <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+    <description>Example for a custom action</description>
+    <description xml:lang="be">Прыклад адмысловага дзеяньня</description>
+    <description xml:lang="ca">Exemple d’acció personalitzada</description>
+    <description xml:lang="cs">Příklad vlastní akce</description>
+    <description xml:lang="de">Beispiel für eine eigene Aktion</description>
+    <description xml:lang="dz">སྲོལ་སྒྲིག་བྱ་བ་ཅིག་གི་དོན་ལུ་དཔེ།</description>
+    <description xml:lang="el">Παράδειγμα προσαρμοσμένης ενέργειας</description>
+    <description xml:lang="en_GB">Example for a custom action</description>
+    <description xml:lang="eo">Ekzemplo de kutima ago</description>
+    <description xml:lang="es">Ejemplo de una acción personalizada</description>
+    <description xml:lang="et">Kohandatud tegevuse näidis</description>
+    <description xml:lang="eu">Ekintza pertsonalizatu adibidea</description>
+    <description xml:lang="fi">Esimerkki mukautetusta toiminnosta</description>
+    <description xml:lang="fr">Exemple d'une action personnalisée</description>
+    <description xml:lang="gl">Exemplo dunha acción personalizada</description>
+    <description xml:lang="he">דוגמה של פעולה אישית</description>
+    <description xml:lang="hu">Példa egyéni műveletre</description>
+    <description xml:lang="it">Esempio di azione personalizzata</description>
+    <description xml:lang="ja">アクションの例です。</description>
+    <description xml:lang="ko">사용자 정의명령 에제</description>
+    <description xml:lang="lv">Paraugs pielāgotai darbībai</description>
+    <description xml:lang="mk">Пример од сопствена акција</description>
+    <description xml:lang="nb_NO">Eksempel på en egentilpasset aksjon</description>
+    <description xml:lang="nl">Voorbeeldactie</description>
+    <description xml:lang="pa">ਇੱਕ ਕਸਟਮ ਐਕਸ਼ਨ ਲਈ ਉਦਾਹਰਨ</description>
+    <description xml:lang="pl">Przykładowa akcja</description>
+    <description xml:lang="pt_BR">Exemplo de uma ação personalizada</description>
+    <description xml:lang="pt_PT">Exemplo de uma acção personalizada</description>
+    <description xml:lang="ro">Exemplu de acţiune personalizată</description>
+    <description xml:lang="ru">Пример особого действия</description>
+    <description xml:lang="sk">Príklad vlastnej akcie</description>
+    <description xml:lang="sq">Shembull për veprim vetjak</description>
+    <description xml:lang="sv">Exempel på en anpassad åtgärd</description>
+    <description xml:lang="tr">Özel işlem için örnek</description>
+    <description xml:lang="uk">Приклад особливої дії</description>
+    <description xml:lang="ur">مخصوص حرکت کی مثال</description>
+    <description xml:lang="zh_CN">自定义动作示例</description>
+    <description xml:lang="zh_TW">自訂動作範例</description>    
+  <directories/>
+  </action>
+
+  <action>
+    <icon>folder-open</icon>
+    <name>Open Folder as root</name>
+    <name xml:lang="ca">Obre el directori com a root</name>
+    <name xml:lang="es">Abrir carpeta como root</name>
+    <name xml:lang="ja">rootでフォルダを開く</name>
+    <name xml:lang="it">Apri cartella come root</name>
+    <name xml:lang="pt_BR">Abrir pasta como administrador</name>
+    <name xml:lang="pt_PT">Abrir pasta como administrador</name>
+    <name xml:lang="sv">Öppna mapp som root</name>
+    <command>gksu Thunar %F</command>
+    <description>Opens folder in root thunar</description>
+    <description xml:lang="ca">Obre el directori al Thunar amb privilegis de root</description>
+    <description xml:lang="es">Abrir carpeta en Thunar con privilegios de root</description>
+    <description xml:lang="ja">フォルダをroot権限のThunarで開きます</description>
+    <description xml:lang="it">Apre la cartella in thunar con privilegi di root</description>
+    <description xml:lang="pt_BR">Abre uma pasta no thunar com privilégios de administrador</description>
+    <description xml:lang="pt_PT">Abrir pasta no thunar com previlégios de administrador</description>
+    <description xml:lang="sv">Öppnar mappen i Thunar med root-rättigheter</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+  <action>
+    <icon>text-plain</icon>
+    <name>Open file as root</name>
+    <name xml:lang="ca">Obrir arxiu com a root</name>
+    <name xml:lang="es">Abrir archivo como root</name>
+    <name xml:lang="ja">rootとしてファイルを開く</name>
+    <name xml:lang="it">Apri file come root</name>
+    <name xml:lang="pt_BR">Abrir arquivo como administrador</name>
+    <name xml:lang="pt_PT">Abrir arquivo como administrador</name>
+    <name xml:lang="sv">Öppna fil som root</name>
+    <command>gksu mousepad %F</command>
+    <description>Opens file in mousepad with root permission</description>
+    <description xml:lang="ca">Obrir arxiu en Mousepad amb privilegis de root</description>
+    <description xml:lang="es">Abrir archivo en mousepad con privilegios de root</description>
+    <description xml:lang="ja">root権限を持つ mousepad でファイルを開く</description>
+    <description xml:lang="it">Apri file in mousepad con privilegi di root</description>
+    <description xml:lang="pt_BR">Abre uma arquivo no mousepad com privilégios de administrador</description>
+    <description xml:lang="pt_PT">Abrir arquivo no mousepad com previlégios de administrador</description>
+    <description xml:lang="sv">Öppnar fil i mousepad med root-rättigheter</description>
+    <patterns>*</patterns>
+    <text-files/>
+  </action>
+
+  <action>
+    <icon>emblem-symbolic-link</icon>
+    <name>Create symlink</name>
+    <name xml:lang="ca">Crear enllaç</name>
+    <name xml:lang="es">Crear enlace</name>
+    <name xml:lang="ja">リンクを作成</name>
+    <name xml:lang="it">Crea collegamento</name>
+    <name xml:lang="pt_BR">Criar atalho</name>
+    <name xml:lang="pt_PT">Criar ligação</name>
+    <name xml:lang="sv">Skapa genväg</name>
+    <command>ln -s %f symlink-%n</command>
+    <description>makes a link to a folder or file</description>
+    <description xml:lang="ca">crea un enllaç a un directori o fitxer</description>
+    <description xml:lang="es">Realiza un enlace hacia una carpeta o archivo</description>
+    <description xml:lang="ja">フォルダまたはファイルのリンクを作成します</description>
+    <description xml:lang="it">Crea un collegamento ad una cartella o ad un file</description>
+    <description xml:lang="pt_BR">cria um atalho para a pasta ou arquivo</description>
+    <description xml:lang="pt_PT">cria uma ligação a uma pasta ou um ficheiro</description>
+    <description xml:lang="sv">gör en genväg till en mapp eller fil</description>
+    <patterns>*</patterns>
+    <directories/>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
+
+  <action>
+    <icon>gnome-run</icon>
+    <name>GTK Hash</name>
+    <name xml:lang="ca">Comprovació MD5</name>
+    <name xml:lang="es">Suma de verificación MD5</name>
+    <name xml:lang="ja">MD5チェックサム</name>
+    <name xml:lang="it">Calcolo MD5</name>
+    <name xml:lang="pt_BR">Verificador MD5</name>
+    <name xml:lang="pt_PT">MD5 checksum</name>
+    <name xml:lang="sv">MD5-kontrollsumma</name>
+    <command>gtkhash %f</command>
+    <description>Computes MD5 checksum for the selected file.</description>
+    <description xml:lang="ca">Calcula la suma MD5 per al fitxer seleccionat.</description>
+    <description xml:lang="es">Comprobar la suma de verificación MD5 para el archivo seleccionado.</description>
+    <description xml:lang="ja">選択したファイルのMD5チェックサムを計算します</description>
+    <description xml:lang="it">Controlla la somma MD5 per il file selezionato.</description>
+    <description xml:lang="pt_PT">Executa MD5 checksum para o ficheiro seleccionado.</description>
+    <description xml:lang="pt_BR">Calcula o verificador MD5 do arquivo selecionado.</description>
+    <description xml:lang="sv">Räknar ut MD5-kontrollsumman för den valda filen.</description>
+    <patterns>*.iso;*.ISO</patterns>
+    <other-files/>
+  </action>
+
+  <action>
+    <icon>media-optical</icon>
+    <name>Mount/Unmount ISO</name>
+    <name xml:lang="ca">Munta/Desmunta ISO</name>
+    <name xml:lang="es">Montar/Desmontar ISO</name>
+    <name xml:lang="ja">ISOをマウント/アンマウント</name>
+    <name xml:lang="it">Monta/smonta ISO</name>
+    <name xml:lang="pt_BR">Montar/Desmontar ISO</name>
+    <name xml:lang="pt_PT">Montar/Desmontar ISO</name>
+    <name xml:lang="sv">Montera/Avmontera ISO</name>
+    <command>mountiso %f %n</command>
+    <description>Mount or Unmount ISO file.</description>
+    <description xml:lang="ca">Munta o desmunta un fitxer ISO.</description>
+    <description xml:lang="es">Monta o desmontar archivo ISO.</description>
+    <description xml:lang="ja">ISOファイルをマウントまたはアンマウントします</description>
+    <description xml:lang="it">Monta o smonta un file ISO.</description>
+    <description xml:lang="pt_BR">Monta ou Desmonta um arquivo ISO.</description>
+    <description xml:lang="pt_PT">Montar ou desmontar ficheiro ISO.</description>
+    <description xml:lang="sv">Montera eller avmontera en ISO-fil.</description>
+    <patterns>*.iso;*.ISO</patterns>
+    <other-files/>
+  </action>
+  
+  <action>
+    <icon>tools-media-optical-burn</icon>
+    <name>Burn ISO</name>
+    <name xml:lang="ca">Gravar ISO</name>
+    <name xml:lang="es">Grabar ISO</name>
+    <name xml:lang="ja">isoファイルを焼く</name>
+    <name xml:lang="it">Masterizzare ISO</name>
+    <name xml:lang="pt_BR">Gravar ISO</name>
+    <name xml:lang="pt_PT">Gravar ISO</name>
+    <name xml:lang="sv">Bränn ISO</name>
+    <command>xfburn -i %f</command>
+    <description>Burn ISO file.</description>
+    <description xml:lang="ca">Gravar arxiu ISO.</description>
+    <description xml:lang="es">Grabar archivo ISO.</description>
+    <description xml:lang="ja">isoファイルを焼く</description>
+    <description xml:lang="it">Masterizzare file ISO.</description>
+    <description xml:lang="pt_BR">Gravar um arquivo ISO.</description>
+    <description xml:lang="pt_PT">Gravar ficheiro ISO.</description>
+    <description xml:lang="sv">Bränn ISO-fil.</description>
+    <patterns>*.iso;*.ISO</patterns>
+    <other-files/>
+  </action>
+  
+  <action>
+    <icon>object-rotate-right</icon>
+    <name>Rotate clockwise</name>
+    <name xml:lang="ca">Girar a la dreta</name>
+    <name xml:lang="es">Girar a la derecha</name>
+    <name xml:lang="ja">時計回りに回転させ</name>
+    <name xml:lang="it">Ruotare in senso orario</name>
+    <name xml:lang="pt_BR">Girar no sentido horário</name>
+    <name xml:lang="pt_PT">Girar no sentido horário</name>
+    <name xml:lang="sv">Rotera medurs</name>
+    <command>exiftran -a -9 -i -p %F</command>
+    <description>Rotate jpeg image 90 degrees clockwise.</description>
+    <description xml:lang="ca">Girar imatge jpeg 90 graus cap a la dreta.</description>
+    <description xml:lang="es">Girar imagen jpeg 90 grados hacia la derecha.</description>
+    <description xml:lang="ja">時計回りに90度回転したJPEG画像を回転させます。</description>
+    <description xml:lang="it">uota l'immagine di 90 gradi in senso orario jpeg.</description>
+    <description xml:lang="pt_BR">Rodar imagem jpeg 90 graus para a direita.</description>
+    <description xml:lang="pt_PT">Rodar imagem jpeg 90 graus para a direita.</description>
+    <description xml:lang="sv">Rotera JPEG-bild 90 grader medurs.</description>
+    <patterns>*.jpg;*.JPG;*.jpeg;*.JPEG</patterns>
+    <image-files/>
+  </action>
+  
+  <action>
+    <icon>object-rotate-left</icon>
+    <name>Rotate counter-clockwise</name>
+    <name xml:lang="ca">Girar a la dreta</name>
+    <name xml:lang="es">Girar a la derecha</name>
+    <name xml:lang="ja">時計回りに回転させ</name>
+    <name xml:lang="it">Ruotare in senso orario</name>
+    <name xml:lang="pt_BR">Girar no sentido horário</name>
+    <name xml:lang="pt_PT">Girar no sentido horário</name>
+    <name xml:lang="sv">Rotera medurs</name>
+    <command>exiftran -a -2 -i -p %F</command>
+    <description>Rotate jpeg image 90 degrees counter-clockwise.</description>
+    <description xml:lang="ca">Girar imatge jpeg de 90 graus cap a l'esquerra.</description>
+    <description xml:lang="es">Girar imagen jpeg de 90 grados hacia la izquierda.</description>
+    <description xml:lang="ja">jpeg画像を90度反時計回りに回転させます。</description>
+    <description xml:lang="it">Ruota immagine jpeg di 90 gradi in senso antiorario.</description>
+    <description xml:lang="pt_BR">Rodar imagem jpeg 90 graus sentido anti-horário.</description>
+    <description xml:lang="pt_PT">Rodar imagem jpeg 90 graus sentido anti-horário.</description>
+    <description xml:lang="sv">Rotera jpeg bilden 90 grader moturs.</description>
+    <patterns>*.jpg;*.JPG;*.jpeg;*.JPEG</patterns>
+    <image-files/>
+  </action>
+
+  <action>
+    <icon>document-print</icon>
+    <name>Print File</name>
+    <name xml:lang="ca">Imprimeix fitxer</name>
+    <name xml:lang="es">Imprimir archivo</name>
+    <name xml:lang="ja">ファイルを印刷</name>
+    <name xml:lang="it">Stampa file</name>
+    <name xml:lang="pt_BR">Imprimir arquivo</name>
+    <name xml:lang="pt_PT">Imprimir Ficheiro</name>
+    <name xml:lang="sv">Skriv ut filen</name>
+    <command>xfprint4 %f</command>
+    <description>Prints the selected file</description>
+    <description xml:lang="ca">Imprimeix el fitxer seleccionat</description>
+    <description xml:lang="es">Imprime el archivo seleccionado</description>
+    <description xml:lang="ja">選択したファイルを印刷します</description>
+    <description xml:lang="it">Stampa il file selezionato</description>
+    <description xml:lang="pt_PT">Imprime o ficheiro seleccionado</description>
+    <description xml:lang="pt_BR">Imprime o arquivo selecionado</description>
+    <description xml:lang="sv">Skriver ut den markerade filen</description>
+    <patterns>*</patterns>
+    <text-files/>
+  </action>
+
+  <action>
+    <icon>edit-find</icon>
+    <name>Search</name>
+    <name xml:lang="ca">Cerca</name>
+    <name xml:lang="es">Buscar</name>
+    <name xml:lang="ja">検索</name>
+    <name xml:lang="it">Cerca</name>
+    <name xml:lang="pt_BR">Procurar</name>
+    <name xml:lang="pt_PT">Procura</name>
+    <name xml:lang="sv">Sök</name>
+    <command>catfish %f</command>
+    <description>Search this folder for files using Catfish</description>
+    <description xml:lang="ca">Cerca fitxers al directori fent servir Catfish</description>
+    <description xml:lang="es">Buscar archivos en esta carpeta mediante Catfish</description>
+    <description xml:lang="ja">Catfishを使用してこのフォルダのファイルを検索します</description>
+    <description xml:lang="it">Cerca dei file in questa cartella usando Catfish</description>
+    <description xml:lang="pt_BR">Procura por arquivos nesta pasta usando o Catfish</description>
+    <description xml:lang="pt_PT">Procura nesta pasta por ficheiros que usem Catfish</description>
+    <description xml:lang="sv">Sök efter filer i den här mappen med Catfish</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+  <action>
+    <icon>fonts</icon>
+    <name>Install .ttf Font</name>
+    <name xml:lang="bg">Инсталиране на шрифт с разширение .ttf</name>
+    <name xml:lang="ca">Instal·lar fonts .ttf</name>
+    <name xml:lang="cs">Instalovat .ttf písmo</name>
+    <name xml:lang="de">Installiere .ttf Schriftart</name>
+    <name xml:lang="es">Instalar fuente .ttf</name>
+    <name xml:lang="fr">Installer les polices .ttf</name>
+    <name xml:lang="hr">Instaliraj .ttf font</name>
+    <name xml:lang="it">Installa font .ttf</name>
+    <name xml:lang="ja">.ttfフォントのインストール</name>
+    <name xml:lang="ko">.ttf 폰트 설치</name>
+    <name xml:lang="nl">Installeer .ttf lettertype</name>
+    <name xml:lang="pl">Instalacja czcionki .ttf</name>
+    <name xml:lang="pt_BR">Install .ttf font</name>
+    <name xml:lang="pt_PT">Instalar fontes .ttf</name>
+    <name xml:lang="sk">Inštalovať .ttf písmo</name>
+    <name xml:lang="sv">Installera .ttf typsnitt</name>
+    <name xml:lang="tr">.ttf fontu yükle</name>
+    <command>fontinstaller %f %n</command>
+    <description>Installs .ttf Fonts for the user or system</description>
+    <description xml:lang="bg">Инсталиране на шрифт с разширение .ttf за потребителя или цялата система</description>
+    <description xml:lang="cs">Instalovat .ttf písma pro uživatele nebo systém</description>
+    <description xml:lang="ca">Instal·la fonts .ttf per a l'usuari o el sistema</description>
+    <description xml:lang="de">Installiert .ttf Schriftart für den Benutzer oder systemweit</description>
+    <description xml:lang="es">Instala fuentes .ttf para el usuario o el sistema</description>
+    <description xml:lang="fr">Installer les polices .ttf pour l'utilisateur ou le système</description>
+    <description xml:lang="hr">Instaliraj .ttf font za korisnika ili za sistem</description>
+    <description xml:lang="it">Installare i Font .ttf per l'utente o nel sistema</description>
+    <description xml:lang="ja">.ttfフォントをユーザーまたはシステムにインストールします</description>
+    <description xml:lang="ko">.ttf 파일을 사용자 폰트나 시스템 폰트로 설치합니다</description>
+    <description xml:lang="nl">Installeert .ttf lettertypes voor de gebruiker of het systeem</description>
+    <description xml:lang="pl">Zainstaluj czcionki .ttf dla użytkownika lub systemu</description>
+    <description xml:lang="pt_BR">Instalar fonte .ttf</description>
+    <description xml:lang="pt_PT">Instalar fontes .ttf para o utilizador ou sistema</description>
+    <description xml:lang="sk">Inštalovať .ttf písma pre užívateľa alebo systém</description>
+    <description xml:lang="sv">Installerar .ttf typsnitt på användarnivå eller på systemnivå</description>
+    <description xml:lang="tr">Kullanıcı veya sistem için .ttf fontları yükler</description>
+    <patterns>*.ttf;*.TTF</patterns>
+    <other-files/>
+  </action>
+  
+  <action>
+    <icon>folder-remote</icon>
+    <name>Create samba share</name>
+    <command>sambashare %f %n</command>
+    <description>Create a samba share</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+</actions>

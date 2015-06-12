@@ -1,0 +1,164 @@
+/* Do not remove the @namespace line -- it's required for correct functioning */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");  /* set default namespace to XUL */
+
+/* Reference: http://mxr.mozilla.org/comm-release/source/mail/themes/linux/mail */
+
+/* ###### Toolbar icon replacements ####### */
+/* Reference: http://mxr.mozilla.org/comm-release/source/mail/themes/linux/mail/primaryToolbar.css */
+#button-getmsg {
+  list-style-image: url("evolvere/getmsg.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-newmsg {
+  list-style-image: url("evolvere/newmsg.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-address {
+  list-style-image: url("evolvere/address.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-reply {
+  list-style-image: url("evolvere/reply.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-replyall {
+  list-style-image: url("evolvere/reply-all.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-replylist {
+  list-style-image: url("evolvere/reply-list.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-forward {
+  list-style-image: url("evolvere/forward.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+/* .junk-button {
+  list-style-image: url("evolvere/junk.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+} */
+
+#button-chat {
+  display: none !important;
+}
+
+
+/* ###### New message icon replacements ####### */
+/* Reference: http://mxr.mozilla.org/comm-release/source/mail/themes/linux/mail/compose/messengercompose.css */
+#button-send {
+  list-style-image: url("evolvere/send.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#spellingButton {
+  list-style-image: url("evolvere/spelling.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-attach {
+  list-style-image: url("evolvere/attach.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-security {
+  list-style-image: url("evolvere/security.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+#button-save {
+  list-style-image: url("evolvere/save.svg") !important;
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+
+
+/* ###### Folder pane icon replacements ####### */
+/* Generic folder icon replacement */
+.tabmail-tab[type="folder"], treechildren::-moz-tree-image(folderNameCol) {
+  list-style-image: url("evolvere/folder.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Inbox" icon replacement */ 
+.tabmail-tab[type="folder"][SpecialFolder="Inbox"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) {
+  list-style-image: url("evolvere/inbox.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Sent" icon replacement */ 
+.tabmail-tab[type="folder"][SpecialFolder="Sent"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
+  list-style-image: url("evolvere/sent.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Outbox" icon replacement */   
+.tabmail-tab[type="folder"][SpecialFolder="Outbox"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
+  list-style-image: url("evolvere/outbox.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Trash" icon replacement */ 
+.tabmail-tab[type="folder"][SpecialFolder="Trash"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash) {
+  list-style-image: url("evolvere/trash.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Junk" icon replacement */   
+.tabmail-tab[type="folder"][SpecialFolder="Junk"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk) {
+  list-style-image: url("evolvere/junk.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Drafts" icon replacement */ 
+.tabmail-tab[type="folder"][SpecialFolder="Drafts"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts) {
+  list-style-image: url("evolvere/drafts.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+  
+/* Mail "Archive" icon replacement */ 
+.tabmail-tab[type="folder"][SpecialFolder="Archive"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive) {
+  list-style-image: url("evolvere/archive.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* Mail "Virtual" icon replacement */   
+.tabmail-tab[type="folder"][SpecialFolder="Virtual"], treechildren::-moz-tree-image(folderNameCol, specialFolder-Virtual) {
+  list-style-image: url("evolvere/folder.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+    
+/* "IMAP/movemail" icon replacement */ 
+treechildren::-moz-tree-image(folderNameCol, specialFolder-none, isServer-true) {
+List-style-image: url("evolvere/server.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+    
+/* All mail account icon replacements */ 
+treechildren::-moz-tree-image(folderNameCol, specialFolder-none, isServer-true, serverType-pop3) {
+list-style-image: url("evolvere/server-pop3.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+  
+/* Usenet newsgroup account icon replacement */   
+treechildren::-moz-tree-image(folderNameCol, specialFolder-none, isServer-true, serverType-nntp) {
+List-style-image: url("evolvere/server-nntp.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+
+/* "RSS Folders" icon replacement */ 
+treechildren::-moz-tree-image(folderNameCol, specialFolder-none, isServer-true, serverType-rss) {
+List-style-image: url("evolvere/rss.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+  
+/* "Local Folders" icon replacement */ 
+treechildren::-moz-tree-image(folderNameCol, specialFolder-none, isServer-true, serverType-none) {
+List-style-image: url("evolvere/server.svg") !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}

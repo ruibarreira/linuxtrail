@@ -1,0 +1,4 @@
+.bookmark-item[container] {
+  list-style-image: url('evolvere/folder.svg') !important;
+  -moz-image-region: rect(0px 16px 16px 0px) !important;}
+} 

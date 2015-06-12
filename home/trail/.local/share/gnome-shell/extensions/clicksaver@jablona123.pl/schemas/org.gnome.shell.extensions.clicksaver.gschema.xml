@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions-clicksaver">
+  <schema path="/org/gnome/shell/extensions/clicksaver/" id="org.gnome.shell.extensions.clicksaver">
+    <key type="s" name="position">
+        <default>"center"</default>
+        <summary>Position of clicksaver</summary>
+        <description>Can be left or center.</description>
+    </key>
+  </schema>
+</schemalist>

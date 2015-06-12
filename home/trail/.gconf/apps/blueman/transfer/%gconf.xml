@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="browse_command" mtime="1362942562" type="string">
+		<stringvalue>thunar --browser obex://[%d]</stringvalue>
+	</entry>
+</gconf>
