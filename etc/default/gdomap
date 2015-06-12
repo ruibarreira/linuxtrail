@@ -1,0 +1,7 @@
+# Defaults for the gdomap init script.
+
+# Change to "yes" to enable the gdomap daemon.
+ENABLED=no
+
+# See gdomap(8) for details.
+GDOMAP_ARGS="-p -j /var/run/gdomap"

@@ -1,0 +1,9 @@
+[VPN Connection]
+name=vpnc
+service=org.freedesktop.NetworkManager.vpnc
+program=/usr/lib/NetworkManager/nm-vpnc-service
+
+[GNOME]
+auth-dialog=/usr/lib/NetworkManager/nm-vpnc-auth-dialog
+properties=/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-vpnc-properties
+supports-external-ui-mode=true

@@ -1,0 +1,8 @@
+geoclue:100000:65536
+Debian-gdm:165536:65536
+speech-dispatcher:231072:65536
+mysql:362144:65536
+systemd-timesync:427680:65536
+systemd-network:493216:65536
+systemd-resolve:558752:65536
+systemd-bus-proxy:624288:65536

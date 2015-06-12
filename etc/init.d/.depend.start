@@ -1,0 +1,37 @@
+TARGETS = decnet motd killprocs nfs-common minissdpd rsyslog samba-ad-dc virtualbox-guest-utils hdapsd nmbd virtualbox uuidd sudo binfmt-support fancontrol apache2 irqbalance dbus winbind mysql atd speech-dispatcher acpid hddtemp lpd clamav-freshclam gdomap anacron loadcpufreq rsync ntp network-manager avahi-daemon lightdm exim4 bluetooth cpufrequtils cron wicd openvpn gdm3 cups saned cups-browsed smbd bootlogs plymouth single rmnologin rc.local
+INTERACTIVE = apache2 openvpn
+apache2: rsyslog
+irqbalance: rsyslog
+dbus: rsyslog
+winbind: rsyslog
+mysql: rsyslog
+atd: rsyslog
+speech-dispatcher: rsyslog
+acpid: rsyslog
+hddtemp: rsyslog
+lpd: rsyslog
+clamav-freshclam: rsyslog
+gdomap: rsyslog
+anacron: rsyslog
+loadcpufreq: rsyslog
+rsync: rsyslog
+ntp: rsyslog
+network-manager: dbus rsyslog
+avahi-daemon: dbus rsyslog
+lightdm: acpid dbus
+exim4: rsyslog mysql
+bluetooth: rsyslog dbus
+cpufrequtils: loadcpufreq
+cron: rsyslog winbind
+wicd: dbus
+openvpn: rsyslog network-manager
+gdm3: dbus network-manager openvpn acpid
+cups: rsyslog
+saned: rsyslog dbus
+cups-browsed: rsyslog
+smbd: cups nmbd
+bootlogs: gdm3
+plymouth: gdm3 minissdpd irqbalance rsyslog dbus network-manager winbind samba-ad-dc nfs-common mysql atd virtualbox-guest-utils smbd cups avahi-daemon hdapsd saned speech-dispatcher nmbd lightdm acpid exim4 decnet apache2 bluetooth hddtemp lpd clamav-freshclam gdomap virtualbox uuidd cups-browsed openvpn motd bootlogs anacron cpufrequtils loadcpufreq rsync ntp sudo binfmt-support fancontrol cron wicd
+single: killprocs motd bootlogs
+rmnologin: sudo minissdpd irqbalance rsyslog gdm3 dbus network-manager winbind samba-ad-dc nfs-common mysql atd virtualbox-guest-utils smbd cups avahi-daemon hdapsd saned speech-dispatcher nmbd lightdm acpid exim4 decnet apache2 bluetooth hddtemp lpd clamav-freshclam gdomap virtualbox uuidd cups-browsed openvpn motd bootlogs anacron cpufrequtils loadcpufreq rsync ntp binfmt-support fancontrol cron wicd
+rc.local: minissdpd irqbalance rsyslog gdm3 dbus network-manager winbind samba-ad-dc nfs-common mysql atd virtualbox-guest-utils smbd cups avahi-daemon hdapsd saned speech-dispatcher nmbd lightdm acpid exim4 decnet apache2 bluetooth hddtemp lpd clamav-freshclam gdomap virtualbox uuidd cups-browsed openvpn motd bootlogs anacron cpufrequtils loadcpufreq rsync ntp sudo binfmt-support fancontrol cron wicd

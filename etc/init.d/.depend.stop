@@ -1,0 +1,17 @@
+TARGETS = unattended-upgrades decnet urandom ufw minissdpd samba-ad-dc virtualbox-guest-utils hdapsd nmbd virtualbox uuidd apache2 irqbalance winbind atd speech-dispatcher hddtemp lpd clamav-freshclam gdomap alsa-utils lightdm exim4 bluetooth wicd openvpn saned cups-browsed smbd plymouth mysql network-manager avahi-daemon gdm3 cups sendsigs rsyslog umountnfs.sh rpcbind nfs-common hwclock.sh networking umountfs umountroot halt reboot
+mysql: exim4
+network-manager: openvpn
+avahi-daemon: saned cups-browsed
+gdm3: plymouth
+cups: smbd
+sendsigs: unattended-upgrades minissdpd irqbalance gdm3 alsa-utils winbind samba-ad-dc mysql atd virtualbox-guest-utils smbd avahi-daemon hdapsd saned speech-dispatcher nmbd lightdm exim4 apache2 network-manager bluetooth hddtemp clamav-freshclam gdomap virtualbox uuidd plymouth cups-browsed openvpn wicd
+rsyslog: irqbalance sendsigs winbind mysql atd avahi-daemon saned speech-dispatcher exim4 apache2 network-manager bluetooth hddtemp lpd clamav-freshclam gdomap cups-browsed openvpn cups
+umountnfs.sh: unattended-upgrades minissdpd irqbalance rsyslog gdm3 alsa-utils winbind samba-ad-dc mysql atd virtualbox-guest-utils smbd avahi-daemon hdapsd saned speech-dispatcher nmbd lightdm exim4 apache2 network-manager bluetooth hddtemp clamav-freshclam gdomap virtualbox uuidd plymouth cups-browsed openvpn sendsigs wicd
+rpcbind: umountnfs.sh
+nfs-common: umountnfs.sh
+hwclock.sh: minissdpd rsyslog nfs-common mysql atd uuidd cups-browsed
+networking: minissdpd winbind samba-ad-dc mysql umountnfs.sh smbd rpcbind nmbd exim4 decnet apache2 hddtemp cups-browsed openvpn
+umountfs: unattended-upgrades hwclock.sh minissdpd irqbalance gdm3 alsa-utils winbind samba-ad-dc mysql atd umountnfs.sh virtualbox-guest-utils smbd avahi-daemon hdapsd saned speech-dispatcher networking rpcbind urandom nmbd lightdm exim4 apache2 network-manager bluetooth hddtemp clamav-freshclam gdomap virtualbox uuidd plymouth cups-browsed openvpn wicd
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

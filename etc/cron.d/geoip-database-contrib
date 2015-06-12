@@ -1,0 +1,5 @@
+#
+# Regular cron job for the geoip-database-contrib package,
+# used to update the GeoLite database.
+#
+0 4 10 * *      root    [ -x /usr/sbin/update-geoip-database ] && /usr/sbin/update-geoip-database > /dev/null

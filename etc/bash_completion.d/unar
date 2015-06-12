@@ -1,0 +1,84 @@
+# unar(1) completion
+
+have unar &&
+_unar()
+{
+    local cur prev
+
+    COMPREPLY=()
+    _get_comp_words_by_ref cur prev
+
+    case $prev in
+        -o|-output-directory)
+            _filedir -d
+            return 0
+            ;;
+        -p|-password)
+            return 0
+            ;;
+        -e|-encoding|-E|-password-encoding)
+            COMPREPLY=( $( compgen -W \
+                    "$(unar -e list | sed -n 's/, //g;s/[()]//g;s/^  \* //p')" \
+                    -- "$cur" ) )
+            return 0
+            ;;
+        -f|-forks)
+            COMPREPLY=( $( compgen -W 'visible hidden skip' -- "$cur" ) )
+            return 0
+            ;;
+    esac
+
+    if [[ "$cur" == -* ]] ; then
+        COMPREPLY=( $( compgen -W '-o -output-directory -f -force-overwrite \
+                -r -force-rename -s -force-skip -d -force-directory -D \
+                -no-directory -p -password -e -encoding -E -password-encoding \
+                -i -indexes -nr -no-recursion -t -copy-time -f -forks -h -help' \
+                -- "$cur" ) )
+    else
+        _filedir '@(rar|zip|tar|gz|bz2|cab|7z|msi|exe|iso|lzma|xz|zipx|lzh|cpio|rpm|lha|z|tbz|tbz2|xar|pit|arc|nds|zoo|lz|deb)'
+    fi
+
+} &&
+complete -F _unar unar
+
+# lsar(1) completion
+
+have lsar &&
+_lsar()
+{
+    local cur prev
+
+    COMPREPLY=()
+    _get_comp_words_by_ref cur prev
+
+    case $prev in
+        -p|-password)
+            return 0
+            ;;
+        -e|-encoding|-E|-password-encoding)
+            COMPREPLY=( $( compgen -W \
+                    "$(lsar -e list | sed -n 's/, //g;s/[()]//g;s/^  \* //p')" \
+                    -- "$cur" ) )
+            return 0
+            ;;
+    esac
+
+    if [[ "$cur" == -* ]] ; then
+        COMPREPLY=( $( compgen -W '-l -long -t -test -p -password -e \
+                -encoding -E -password-encoding -pe -print-encoding -i \
+                -indexes -j -json -ja -json-ascii -nr -no-recursion -h \
+                -help' -- "$cur" ) )
+    else
+        _filedir '@(rar|zip|tar|gz|bz2|cab|7z|msi|exe|iso|lzma|xz|zipx|lzh|cpio|rpm|lha|z|tbz|tbz2|xar|pit|arc|nds|zoo|lz|deb)'
+    fi
+
+} &&
+complete -F _lsar lsar
+
+# Local variables:
+# mode: shell-script
+# sh-basic-offset: 4
+# sh-indent-comment: t
+# indent-tabs-mode: nil
+# End:
+# ex: ts=4 sw=4 et filetype=sh

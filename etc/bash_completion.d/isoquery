@@ -1,0 +1,45 @@
+# /etc/bash_completion.d/isoquery
+# Programmable Bash command completion for the ‘isoquery’ command.
+
+shopt -s progcomp
+
+_isoquery_completion () {
+    local cur prev opts
+
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    opts="-h --help -v --version"
+    opts="${opts} -i --iso -x --xmlfile -l --locale -0 --null"
+    opts="${opts} -n --name -o --official_name -c --common_name"
+
+    case "${prev}" in
+        -i|--iso)
+            local standards=(639 639-3 639-5 3166 3166-2 4217 15924)
+            COMPREPLY=( $(compgen -W "${standards[*]}" -- ${cur}) )
+            ;;
+
+        -x|--xmlfile)
+            COMPREPLY=( $(compgen -A file -- ${cur}) )
+            ;;
+
+        -l|--locale)
+            local locale_names=$(locale --all-locales)
+            COMPREPLY=( $(compgen -W "${locale_names}" -- ${cur}) )
+            ;;
+
+        *)
+            COMPREPLY=($(compgen -W "${opts}" -- ${cur}))  
+            ;;
+    esac
+}
+
+complete -F _isoquery_completion isoquery
+
+
+# Local variables:
+# coding: utf-8
+# mode: shell-script
+# End:
+# vim: fileencoding=utf-8 filetype=bash :

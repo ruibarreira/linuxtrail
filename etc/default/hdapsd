@@ -1,0 +1,22 @@
+# hdapsd default file
+
+# start hdapsd at boottime?
+START="yes"
+
+# the name of the disk device that hdapsd should monitor.
+#
+# usually this is 'hda' for the primary IDE master or 'sda'
+# for the primary S-ATA drive
+DISK="sda"
+
+# sensitivity
+SENSITIVITY=15
+
+# other options to pass to hdapsd.
+# the -d $DISK, -s $SENSITIVITY, -b and -p $PIDFILE options are always passed.
+OPTIONS=""
+
+# The new interface in kernels >=2.6.28 sometimes wrongly detects HDAPS-capable
+# drives as not supported. Set this to "yes" to force-enable the feature.
+# Please be carefull with this setting!
+FORCEENABLE="no"

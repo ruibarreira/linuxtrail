@@ -1,0 +1,11 @@
+# DNET_INTERFACES specifies the names of ethernet interfaces whose
+# MAC address is to be set to the DECnet node address
+DNET_INTERFACES="all"
+# DNET_DAEMONS lists the daemons to start when dnet-progs is installed.
+#
+DNET_DAEMONS="dnetd phoned"
+dnroute_FLAGS="-v -2"
+# The following two lines enable routing, note that if you are
+# being a router, then add dnroute to the DNET_DAEMONS too
+#ROUTING=1
+PRIORITY=32

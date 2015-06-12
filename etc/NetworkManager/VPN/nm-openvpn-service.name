@@ -1,0 +1,11 @@
+[VPN Connection]
+name=openvpn
+service=org.freedesktop.NetworkManager.openvpn
+program=/usr/lib/NetworkManager/nm-openvpn-service
+
+[GNOME]
+auth-dialog=/usr/lib/NetworkManager/nm-openvpn-auth-dialog
+properties=/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-openvpn-properties
+supports-external-ui-mode=true
+supports-hints=true
+
