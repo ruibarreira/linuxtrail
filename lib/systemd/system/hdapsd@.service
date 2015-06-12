@@ -1,0 +1,9 @@
+[Unit]
+Description=hdapsd hard drive active protection system daemon - %I
+Documentation=man:hdapsd(8)
+
+[Service]
+SyslogIdentifier=%p(%I)
+Nice=-5
+ExecStart=/usr/sbin/hdapsd -d %I
+Restart=on-abort
