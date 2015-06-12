@@ -1,0 +1,108 @@
+{
+   "checksum": "f61c97e3a3572eb8347a2b18dbf2993b",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13004463303000000",
+            "id": "21",
+            "name": "Debian | O Sistema Operativo Universal",
+            "type": "url",
+            "url": "https://www.debian.org/index.pt.html"
+         }, {
+            "date_added": "13004463348000000",
+            "id": "22",
+            "name": "Debian wiki",
+            "type": "url",
+            "url": "https://wiki.debian.org/"
+         } ],
+         "date_added": "13004458528373258",
+         "date_modified": "0",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "12948580010000000",
+            "id": "24",
+            "name": "Ars Technica",
+            "type": "url",
+            "url": "http://arstechnica.com/open-source/"
+         }, {
+            "date_added": "12948580001000000",
+            "id": "25",
+            "name": "DistroWatch",
+            "type": "url",
+            "url": "http://distrowatch.com/"
+         }, {
+            "date_added": "12948580062000000",
+            "id": "26",
+            "name": "Kernel.net",
+            "type": "url",
+            "url": "http://kernel.net/"
+         }, {
+            "date_added": "12948580103000000",
+            "id": "27",
+            "name": "Linux.com",
+            "type": "url",
+            "url": "http://www.linux.com/"
+         }, {
+            "date_added": "12948580068000000",
+            "id": "28",
+            "name": "Linux Journal",
+            "type": "url",
+            "url": "http://www.linuxjournal.com/"
+         }, {
+            "date_added": "12948580078000000",
+            "id": "29",
+            "name": "Linux Today",
+            "type": "url",
+            "url": "http://www.linuxtoday.com/"
+         }, {
+            "date_added": "12948580086000000",
+            "id": "30",
+            "name": "OSNews",
+            "type": "url",
+            "url": "http://www.osnews.com/"
+         }, {
+            "date_added": "12948580093000000",
+            "id": "31",
+            "name": "Softpedia",
+            "type": "url",
+            "url": "http://www.softpedia.com/"
+         }, {
+            "date_added": "13004463456000000",
+            "id": "32",
+            "name": "Open source is changing the world: join the movement | opensource.com",
+            "type": "url",
+            "url": "http://opensource.com/"
+         }, {
+            "date_added": "13004463865000000",
+            "id": "33",
+            "name": "Eyecandy for your KDE-Desktop - KDE-Look.org",
+            "type": "url",
+            "url": "http://kde-look.org/"
+         }, {
+            "date_added": "13004464431000000",
+            "id": "34",
+            "name": "Eyecandy for your Xfce-Desktop - Xfce-Look.org",
+            "type": "url",
+            "url": "http://xfce-look.org/"
+         } ],
+         "date_added": "13004458528373258",
+         "date_modified": "13004470292381836",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13004458528373258",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
