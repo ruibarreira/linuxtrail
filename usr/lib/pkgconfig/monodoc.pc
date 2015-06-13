@@ -1,0 +1,9 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib
+sourcesdir=${libdir}/monodoc/sources
+
+Name: Monodoc
+Description: Monodoc - Mono Documentation Tools
+Version: 3.2.8
+Libs: /r:${prefix}/lib/mono/monodoc/monodoc.dll 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e-plugin-list>
+  <e-plugin type="shlib" location="/usr/lib/evolution/3.12/plugins/liborg-gnome-face.so" id="org.gnome.evolution.face" name="Face">
+
+    <author name="Sankar P" email="psankar@novell.com"/>
+    <description xml:space="preserve">Attach a small picture of your face to outgoing messages.</description>
+
+    <hook class="org.gnome.evolution.ui:1.0">
+      <ui-manager id="org.gnome.evolution.composer">
+        <menubar name='main-menu'>
+          <menu action='insert-menu'>
+            <placeholder name="insert-menu-top">
+	      <menuitem action="face-plugin"/>
+            </placeholder>
+          </menu>
+        </menubar>
+      </ui-manager>
+    </hook>
+
+    <hook class="org.gnome.evolution.mail.events:1.0">
+	<event target="message" id="composer.presendchecks" handle="face_handle_send"/>
+    </hook>
+  </e-plugin>
+</e-plugin-list>

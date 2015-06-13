@@ -1,0 +1,7 @@
+PRETTY_NAME="Linux Trail"
+NAME="Linux Trail"
+ID=trail
+ANSI_COLOR="1;31"
+HOME_URL="http://www.linuxtrail.com/"
+SUPPORT_URL="http://forums.linuxtrail.com/"
+BUG_REPORT_URL="http://forums.linuxtrail.com/"

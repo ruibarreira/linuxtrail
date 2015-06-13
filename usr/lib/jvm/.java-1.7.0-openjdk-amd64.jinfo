@@ -1,0 +1,45 @@
+name=java-7-openjdk-amd64
+alias=java-1.7.0-openjdk-amd64
+priority=1071
+section=main
+
+hl rmid /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/rmid
+hl java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+hl keytool /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/keytool
+hl pack200 /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/pack200
+hl rmiregistry /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/rmiregistry
+hl unpack200 /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/unpack200
+hl orbd /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/orbd
+hl servertool /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/servertool
+hl tnameserv /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/tnameserv
+hl jexec /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jexec
+jre policytool /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/policytool
+jdk idlj /usr/lib/jvm/java-7-openjdk-amd64/bin/idlj
+jdk wsimport /usr/lib/jvm/java-7-openjdk-amd64/bin/wsimport
+jdk rmic /usr/lib/jvm/java-7-openjdk-amd64/bin/rmic
+jdk jinfo /usr/lib/jvm/java-7-openjdk-amd64/bin/jinfo
+jdk jsadebugd /usr/lib/jvm/java-7-openjdk-amd64/bin/jsadebugd
+jdk native2ascii /usr/lib/jvm/java-7-openjdk-amd64/bin/native2ascii
+jdk jstat /usr/lib/jvm/java-7-openjdk-amd64/bin/jstat
+jdk javadoc /usr/lib/jvm/java-7-openjdk-amd64/bin/javadoc
+jdk javah /usr/lib/jvm/java-7-openjdk-amd64/bin/javah
+jdk jps /usr/lib/jvm/java-7-openjdk-amd64/bin/jps
+jdk jstack /usr/lib/jvm/java-7-openjdk-amd64/bin/jstack
+jdk jrunscript /usr/lib/jvm/java-7-openjdk-amd64/bin/jrunscript
+jdk javac /usr/lib/jvm/java-7-openjdk-amd64/bin/javac
+jdk jhat /usr/lib/jvm/java-7-openjdk-amd64/bin/jhat
+jdk javap /usr/lib/jvm/java-7-openjdk-amd64/bin/javap
+jdk jar /usr/lib/jvm/java-7-openjdk-amd64/bin/jar
+jdk extcheck /usr/lib/jvm/java-7-openjdk-amd64/bin/extcheck
+jdk schemagen /usr/lib/jvm/java-7-openjdk-amd64/bin/schemagen
+jdk xjc /usr/lib/jvm/java-7-openjdk-amd64/bin/xjc
+jdk jmap /usr/lib/jvm/java-7-openjdk-amd64/bin/jmap
+jdk appletviewer /usr/lib/jvm/java-7-openjdk-amd64/bin/appletviewer
+jdk jconsole /usr/lib/jvm/java-7-openjdk-amd64/bin/jconsole
+jdk jstatd /usr/lib/jvm/java-7-openjdk-amd64/bin/jstatd
+jdk jdb /usr/lib/jvm/java-7-openjdk-amd64/bin/jdb
+jdk serialver /usr/lib/jvm/java-7-openjdk-amd64/bin/serialver
+jdk wsgen /usr/lib/jvm/java-7-openjdk-amd64/bin/wsgen
+jdk jcmd /usr/lib/jvm/java-7-openjdk-amd64/bin/jcmd
+jdk jarsigner /usr/lib/jvm/java-7-openjdk-amd64/bin/jarsigner
+plugin mozilla-javaplugin.so /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/IcedTeaPlugin.so

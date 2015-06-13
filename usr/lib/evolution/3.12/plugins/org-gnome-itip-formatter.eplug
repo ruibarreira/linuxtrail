@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<e-plugin-list>
+	<e-plugin type="shlib" location="/usr/lib/evolution/3.12/plugins/liborg-gnome-itip-formatter.so" id="org.gnome.evolution.itip_formatter" name="Itip Formatter">
+		<description>Display "text/calendar" MIME parts in mail messages.</description>
+		<author name="JP Rosevear" email="jpr@novell.com"/>
+
+		<hook class="org.gnome.evolution.calendar.config:1.0">
+			<group target="prefs" id="org.gnome.evolution.calendar.prefs">
+				<item type="page" path="90.itip" label="itip" factory="itip_formatter_page_factory"/>
+			</group>
+		</hook>
+	</e-plugin>
+</e-plugin-list>

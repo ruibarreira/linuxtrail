@@ -1,0 +1,6 @@
+DATA_DIR = "/usr/share"
+PKG_DATA_DIR = "/usr/share/gnome-tweak-tool"
+GSETTINGS_SCHEMA_DIR = "/usr/share/glib-2.0/schemas"
+TWEAK_DIR = "/usr/lib/python2.7/dist-packages/gtweak/tweaks"
+VERSION = "3.14.2"
+LOCALE_DIR = "/usr/share/locale"

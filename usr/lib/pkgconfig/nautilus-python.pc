@@ -1,0 +1,7 @@
+Name: Nautilus-Python
+Description: Nautilus-Python Components
+Version: 1.1
+
+prefix=/usr
+libdir=${prefix}/lib
+pythondir=${prefix}/share/nautilus-python/extensions
