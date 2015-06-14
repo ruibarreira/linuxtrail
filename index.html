@@ -1,0 +1,127 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Linux Trail</title>
+        <meta name="description" content="A Debian-based GNU/Linux distribution aimed for developers">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script>
+            function loadKnowMore() {
+                $("#content").load("ajax/knowMore.htm");
+            }
+            function loadSupport() {
+                $("#content").load("ajax/Support.htm");
+            }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <a href="/"><img src="img/imgLogo.png" alt="logo" /></a>
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="loadKnowMore();">Know+</a></li>
+                        <li><a href="#" onclick="loadSupport();">Support</a></li>
+                        <li><a href="https://github.com/ruibarreira/linuxtrail">Code</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <article id="content">
+                    <section>
+                        <h3>BUILT FOR DEVELOPMENT</h3>
+                        <p>Autokey, Apache, PHP, MySQL, Ruby on Rails, Wine and tools like Geany, Monodevelop and the new Visual Studio Code come pre-installed,
+                        so you can immediately start programming and developing your projects. You got also OpenJDK if you want to work with a Java based IDE like Eclipse or Netbeans.</p>
+                    </section>
+                    <section>
+                        <h3>GNOME 3 ENHANCED EXPERIENCE</h3>
+                        <p>Gnome 3 Classic is the chosen desktop environment with some tweaks. You can promptly work with remote desktop areas, switch easily between them,
+                        access your favorite apps on the top bar as well as the gnome menu, applications and places. You also have a middle top panel to have immediate access to all your apps
+                        and services, your email client and the terminal.</p>
+                    </section>
+                    <section>
+                        <h3>DESKTOP READY</h3>
+                        <p>As soon as you install Linux Trail you are ready to go. You can play your music, video, organize and edit your images, create documents, program, surf the web and
+                        many many more. You can install your '.deb' packages with the pre-installed Gdebi, search for programs with gpk and install them with terminal.</p>
+                    </section>
+                    <section>
+                        <a href="gallery/default.htm">Let me see some screenshots</a>
+                    </section>
+                </article>
+
+                <aside>
+                    <h3>upcoming inclusion</h3>
+                    <iframe src="https://www.youtube.com/embed/jXEjYu0SJ3A" frameborder="0" allowfullscreen></iframe>
+                </aside>
+                <aside id="links">
+                    <article>
+                        <header>
+                            <a href="http://www.gnome.org/"> <img style="margin:5% 0 0 5%" src="https://static.gnome.org/friends/banners/fog-220x32.png" alt="Become a Friend of GNOME" border="0" /></a> <br/>
+                        </header>
+                        <section>
+                            <h3>Download</h3>
+                            <a href="https://goo.gl/duC85U">trailx64_201506.iso</a> <b>(64bits)</b><br>
+                            md5sum: 3e3769d8f050cbfea34ffae5dd79950b
+                        </section>
+                        <section>
+                            <p>*The password for live mode is <strong>live</strong></p>
+                        </section>
+                        <section>
+                            <h3>Resources you may wish</h3>
+                            <a href="https://goo.gl/GTQrUW">Wallpapers</a> | <a href="https://goo.gl/8hLt0c">Themes</a> | <a href="https://goo.gl/i6fybv">Extensions</a>
+                        </section>
+                    </article>
+                </aside>
+           
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h4>
+                    <a href="http://www.gnu.org/licenses/gpl.txt" style="color:white;text-decoration:none">&copy;</a> 
+                    2015 Linux Trail
+                    <a href="http://rss.linuxtrail.com/"><img src="img/icon_rss.png" alt="icon_rss" style="margin-left:5px"/></a><a href="https://plus.google.com/+Linuxtrail/posts"><img src="img/icon_googleplus.png" alt="icon_googleplus" style="margin-left:5px"/></a><a href="https://www.facebook.com/linuxtrail"><img src="img/icon_facebook.png" alt="icon_facebook" style="margin-left:5px"/></a>
+                    Developed by 
+                    <a style="color:#ffffff;text-decoration:none" href="https://www.linkedin.com/pub/rui-barreira/6a/922/710">
+                        Rui Barreira
+                    </a> 
+                    . Custom artwork by 
+                    <a style="color:#ffffff;text-decoration:none" href="https://www.behance.net/serenelasantos">
+                        Serenela Santos 
+                    </a>
+                </h4>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+td.tdImg { width:200px; height:200px;}
+body{background-color:#eee;}
+#divWG {text-align:center; font: 11px Verdana, Arial, Helvetica, sans-serif;}
+#divWG img, #divWG table {border:none;}
+#divWG a:link, #divWG a:visited {text-decoration:none;}
+#divWG a:hover {color:red;text-decoration:underline;}
+#tblThumbsLayout {text-align:left; margin: 0 auto;}
+#tblGalleryName{margin-top:2px;}
+#currentGalleryLocation {font-weight:bold;}
+td#galleryNameCell {font-size: 18px; font-weight:bold; color:#606060; margin: 6px 6px 0 0;}
+td#pagingCell {text-align:right; white-space:nowrap;}
+#imgPrev {margin-right:3px; margin-bottom:-5px;}
+#imgNext {margin-left:3px; margin-bottom:-5px;}
+.currentPage {
+ font-weight: bold;
+ background-color: #FFFFE0;
+ font-size: 12px;}
+.otherPage {font-size: 12px;}
+td.tdImg {border: 1px solid; border-color: #aaa #666 #666 #aaa;
+ text-align:center; background-color:#fff; vertical-align:middle;padding:4px;}
+td.tdImg img {margin-top:11px;}
+#pnCell {text-align:right;}
+a.pn, a.pn:LINK,a.pn:VISITED {color: #606060; font: 9px arial, helvetica, sans-serif; text-decoration: none; padding: 1px 4px;}
+a.pn:HOVER {color: #559933; background-color:#E6F9F8;border-top:1px solid #D9E9E4;border-bottom:1px solid #B4D1C8;}
