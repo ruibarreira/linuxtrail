@@ -1,0 +1,2 @@
+# dh_python2 creates one for us, we need it.
+package-contains-empty-directory usr/share/pyshared/PySide/
