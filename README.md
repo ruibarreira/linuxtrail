@@ -3,7 +3,7 @@ Linux Trail is a distro based on Debian stable that uses the Gnome3 Classic as t
 If you want a stable, fast and productivity booster OS, than this is for you!
 
 <h5>BUILT FOR DEVELOPMENT</h5>
-Autokey, Apache, PHP, MySQL, Ruby on Rails, Wine and tools like Geany, Monodevelop and the new Visual Studio Code come
+Autokey, Apache, PHP, MySQL, Ruby on Rails, Python, Git, Wine and tools like Geany, Monodevelop and the new Visual Studio Code come
 pre-installed, so you can immediately start programming and developing your projects. You got also OpenJDK if you want
 to work with a Java based IDE like Eclipse or Netbeans.
 
@@ -15,8 +15,8 @@ terminal.
 
 <h5>DESKTOP READY</h5>
 As soon as you install Linux Trail you are ready to go. You can play your music, video, organize and edit your images,
-create documents, program, surf the web and many many more. You can install your '.deb' packages with the pre-installed
-Gdebi, search for programs with gpk and install them with terminal.
+create documents, program, surf the web and many many more. You can install your '.deb' packages with Gdebi, search for
+programs with gpk and install them with terminal or Synaptic.
 
 It comes with most of the tools you need for your work (for developers, coders, programmers, 
 distribution testers, so forth). It is the list:
@@ -41,6 +41,8 @@ Software
             <li>PHP</li>
             <li>MySQL</li>
             <li>Ruby on Rails</li>
+			<li>Python</li>
+			<li>Git</li>
             <li>Virtualbox</li>
             <li>Wine</li>
             <li>TimeTracking</li>
