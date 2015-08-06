@@ -19,7 +19,8 @@
         <script src="js/mobile-detect.min.js"></script>
         <script>
             var md = new MobileDetect(window.navigator.userAgent);
-            if (md.mobile()) {
+			var hostname = location.hostname;
+            if (md.mobile() && hostname != "ruibarreira.github.io") {
                 location.href = "http://ruibarreira.github.io/linuxtrail";
             }
             function loadKnowMore() {
