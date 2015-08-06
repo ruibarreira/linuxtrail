@@ -1,0 +1,8 @@
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/libffmpegsumo.so: libavutil
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/opera: libjpeg
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/opera: libpng
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/opera: libxml2
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/opera: sqlite
+opera-stable: embedded-library usr/lib/x86_64-linux-gnu/opera/opera_autoupdate: libxml2
+#TODO(joleksy): provide manpage for opera
+opera-stable: binary-without-manpage usr/bin/opera

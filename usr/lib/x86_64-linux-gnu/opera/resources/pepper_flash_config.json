@@ -1,0 +1,14 @@
+{
+  "PepperFlashPaths" : [
+    "/opt/google/chrome-beta/PepperFlash/libpepflashplayer.so",
+    "/opt/google/chrome-unstable/PepperFlash/libpepflashplayer.so",
+    "/opt/google/chrome/PepperFlash/libpepflashplayer.so",
+    "/usr/lib/PepperFlash/libpepflashplayer.so",
+    "/usr/lib/chromium-browser/PepperFlash/libpepflashplayer.so",
+    "/usr/lib/chromium/PepperFlash/libpepflashplayer.so",
+    "/usr/lib/pepperflashplugin-nonfree/libpepflashplayer.so",
+    "/usr/lib64/PepperFlash/libpepflashplayer.so",
+    "/usr/lib64/chromium-browser/PepperFlash/libpepflashplayer.so",
+    "/usr/lib64/chromium/PepperFlash/libpepflashplayer.so"
+  ]
+}
