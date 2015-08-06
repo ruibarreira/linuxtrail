@@ -16,7 +16,12 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/mobile-detect.min.js"></script>
         <script>
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile()) {
+                location.href = "http://ruibarreira.github.io/linuxtrail";
+            }
             function loadKnowMore() {
                 $("#content").load("ajax/knowMore.htm");
             }
@@ -48,7 +53,7 @@
                 <article id="content">
                     <section>
                         <h3>BUILT FOR DEVELOPMENT</h3>
-                        <p>Autokey, Apache, PHP, MySQL, Ruby on Rails, Wine and tools like Geany, Monodevelop and the new Visual Studio Code come pre-installed,
+                        <p>Autokey, Apache, PHP, MySQL, Ruby on Rails, Python, Git, Wine and tools like Geany, Monodevelop and the new Visual Studio Code come pre-installed,
                         so you can immediately start programming and developing your projects. You got also OpenJDK if you want to work with a Java based IDE like Eclipse or Netbeans.</p>
                     </section>
                     <section>
@@ -60,7 +65,7 @@
                     <section>
                         <h3>DESKTOP READY</h3>
                         <p>As soon as you install Linux Trail you are ready to go. You can play your music, video, organize and edit your images, create documents, program, surf the web and
-                        many many more. You can install your '.deb' packages with the pre-installed Gdebi, search for programs with gpk and install them with terminal.</p>
+                        many many more. You can install your '.deb' packages with Gdebi, search for programs with gpk and install them with terminal or Synaptic.</p>
                     </section>
                     <section>
                         <a href="gallery/default.htm">Let me see some screenshots</a>
@@ -78,8 +83,8 @@
                         </header>
                         <section>
                             <h3>Download</h3>
-                            <a href="https://goo.gl/7S5Wsz">trailx64_201506.iso</a> <b>(64bits)</b><br>
-                            md5sum: 4a488767c16d3b1a7233151f0813fa79
+                            <a href="https://goo.gl/bhTcCN">trailx64_201508.iso</a> <b>(64bits)</b><br>
+                            md5sum: 3f03a3c1a18935ac7f5a66e75945f691
                         </section>
                         <section>
                             <p>*The password for live mode is <strong>live</strong></p>
