@@ -28,8 +28,9 @@ const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Lib = Me.imports.lib;
 const CLICKSAVER_SETTINGS_KEY_POSITION = 'position';
 	let extensionPath,
-	buttons = [{ name: 'browser',action: function () { return 'nautilus /usr/share/applications'},icon:'web-browser-symbolic'},
-	{name: 'mail',action: function () { return Gio.app_info_get_default_for_uri_scheme("mailto").get_executable()},icon:'mail-unread-symbolic'},
+	buttons = [{ name: 'apps',action: function () { return 'nautilus /usr/share/applications'},icon:'preferences-system-search-symbolic'},
+	{name: 'launcher',action: function () { return 'launcher'},icon:'web-browser-symbolic'},
+	{name: 'gedit',action: function () { return 'gedit'},icon:'text-editor-symbolic'},
 	{name:'terminal',action: function () { return 'gnome-terminal'},icon:'utilities-terminal-symbolic'}],
 	oButtons,
 	settings,
