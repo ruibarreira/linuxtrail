@@ -27,13 +27,15 @@ Browsers
             <li>Epiphany</li>
         </ul>
     </p>
-Software
+Software and Technologies
     <p>
         <ul>
             <li>AutoKey</li>
             <li>Gedit</li>
             <li>Geany</li>
             <li>CodeLite</li>
+            <li>NodeJS</li>
+            <li>ASP.NET 5</li>
             <li>Monodevelop</li>
             <li>Visual Studio Code</li>
             <li>OpenJDK</li>
