@@ -529,4 +529,4 @@ def get_distro(id=None, codename=None, description=None, release=None):
     elif id == "Debian":
         return DebianDistribution(id, codename, description, release)
     else:
-        return Distribution(id, codename, description, release)
+        return Distribution("Ubuntu", "trusty", "", "stable")

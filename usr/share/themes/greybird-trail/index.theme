@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=greybird-trail
+Type=X-GNOME-Metatheme
+Comment=A flat style theme
+Encoding=UTF-8
+GtkTheme=greybird-trail
+MetacityTheme=greybird-trail
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
