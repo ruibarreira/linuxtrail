@@ -23,7 +23,6 @@ Browsers
         <ul>
             <li>Iceweasel</li>
             <li>Chromium</li>
-            <li>Vivaldi</li>
             <li>Epiphany</li>
         </ul>
     </p>
@@ -38,6 +37,7 @@ Software and Technologies
             <li>ASP.NET 5</li>
             <li>Monodevelop</li>
             <li>Visual Studio Code</li>
+            <li>Meld</li>
             <li>OpenJDK</li>
             <li>Apache</li>
             <li>PHP</li>
@@ -61,6 +61,7 @@ Software and Technologies
             <li>GDebi</li>
             <li>LibreOffice</li>
             <li>VLC</li>
+            <li>Ndiswrapper</li>
         </ul>
     </p>
 and some more...
